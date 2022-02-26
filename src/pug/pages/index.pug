@@ -1,8 +1,13 @@
-html
+include ../components/plan/plan
+
+doctype html
+html(lang="en")
   head
-    title My Site
+    meta(charset="UTF-8")
+    title Пример страницы
+    link(rel="stylesheet" type="text/css" href="main.css")
+
   body
-    header.header 
-        h1 My site
-    content
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, cumque.
+    .wrapper
+      +plan({title: "free", price: 0})
+      +plan({title: "personal", price: 25})
