@@ -7,7 +7,7 @@ module.exports = {
     publicPath: '/', // must be defined any path, `auto` is not supported yet
   },
   entry: {
-    index: './src/index.pug', // the `pug-plugin` extract HTML from entry file
+    index: './src/pug/pages/index.pug', // the `pug-plugin` extract HTML from entry file
   },
   plugins: [
     new PugPlugin(), // add it to handle pug files in entry
